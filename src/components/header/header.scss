@@ -1,0 +1,12 @@
+@import '../../variables/variables';
+
+header {
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+
+    span {
+      color: darken($font-color, 40);
+    }
+  }
+}
