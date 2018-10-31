@@ -1,0 +1,7 @@
+@import '../../variables/variables';
+
+.section {
+  border: $font-color 1px solid;
+  margin: $spacing;
+  border-radius: 5px;
+}

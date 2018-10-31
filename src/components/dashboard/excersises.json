@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Hands",
+    "excercises": [
+      {
+        "name": "Hand relief",
+        "duration": "3 minutes each hand"
+      }
+    ]
+  },
+  {
+    "name": "Back",
+    "excercises": [
+      {
+        "name": "Everyday stretching",
+        "duration": "5 minutes"
+      }
+    ]
+  }
+]
