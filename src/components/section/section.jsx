@@ -1,14 +1,29 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import './section.scss';
 
-export default class Section extends Component {
+class Section extends Component {
+  constructor(props) {
+    super(props);
+    this.navigateToSectionDetail = this.navigateToSectionDetail.bind(this);
+  }
+
+  navigateToSectionDetail(name) {
+    const { history } = this.props;
+    history.push(`/${name}`);
+  }
+
   render() {
     const { name } = this.props;
-    console.log('props', this.props);
     return (
-      <div className="section">
+      <div
+        className="section"
+        onClick={() => this.navigateToSectionDetail(name)}
+      >
         <h2>{name}</h2>
       </div>
     );
   }
 }
+
+export default withRouter(Section);
